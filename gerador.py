@@ -52,6 +52,10 @@ while True:
                     print('Erro no tipo ou valor.')
                 except Exception as causa:
                     print(f'Algo deu errado. Talvez o valor passado não seja uma das opções.')
-        arquivo.close()
+        if escolha_gravacao == 's':
+            print('Dados gravados com sucesso!')
+            arquivo.close()
+        else:
+            print('Os dados não foram gravados.')
     else:
         print('Valor inválido.')
